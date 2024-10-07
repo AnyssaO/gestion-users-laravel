@@ -21,7 +21,7 @@ return new class extends Migration
      * Reverse the migrations.
      */
     public function down()
-    // fonction de rollback pour annuler la migration
+    // fonction de rollback pour annuler la migration (note: pas conseillé car bug souvent)
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('role');
